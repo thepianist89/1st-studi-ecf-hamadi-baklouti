@@ -285,7 +285,7 @@ span {
   box-shadow: inset -1rem -4rem 7rem var(--btn-color);
 }
 
-git commit -m 'fixing some front end bugs 26-12-23 no responsive yet' .card {
+.card {
   display: flex;
   flex-direction: column;
   padding: 88px 40px 66px;
