@@ -31,10 +31,10 @@
   --card-bg-color: #2d343f;
 
   --h1-font: 7.8rem;
-  --h2-font: 3.5rem;
+  --h2-font: 3.2rem;
   --h3-font: 2rem;
   --p-font: 1.6rem;
-  --flex-GaP: 40px;
+  --flex-GaP: 60px;
   --grid-gap: 2.2rem;
 }
 
@@ -66,7 +66,7 @@ header {
 header.je-mattache {
   background-color: var(--bg-color);
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
-  padding: 16px 16%;
+  padding: 16px 10%;
 }
 
 i {
@@ -234,8 +234,9 @@ section {
 }
 
 .socials ul {
+  margin-top: 1rem;
   display: flex;
-  gap: 0.7rem;
+  gap: 1.6rem;
 }
 
 .socials i {
@@ -266,6 +267,9 @@ section {
 .sect-titre {
   text-align: center;
   font-size: var(--h2-font);
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
 }
 .sect-content {
   display: grid;
@@ -276,8 +280,12 @@ section {
 span {
   color: blue;
 }
+.la-team {
+  font-size: 4rem;
+  box-shadow: inset -1rem -4rem 7rem var(--btn-color);
+}
 
-.card {
+git commit -m 'fixing some front end bugs 26-12-23 no responsive yet' .card {
   display: flex;
   flex-direction: column;
   padding: 88px 40px 66px;
@@ -379,15 +387,22 @@ span {
   height: 460px;
 }
 .section-btn {
+  font-size: 1.2rem;
+  text-transform: capitalize;
   background: var(--btn-degrade);
   color: var(--h1-color);
   border-radius: 80px 20%;
   padding: 0.8rem 0.3rem;
   width: 150px;
   display: flex;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   transition: all 0.7s ease;
+}
+
+span {
+  font-size: 1.8rem;
 }
 
 .section-btn:hover {
@@ -395,6 +410,16 @@ span {
   background: transparent;
   transform: scale(1.1);
   color: var(--bg-color);
+}
+
+.section-btn span {
+  transition: all 0.8s ease;
+}
+
+.section-btn span:hover {
+  transform: scale(1.4) rotate(180deg);
+  box-shadow: 0 0 20px var(--btn-color);
+  color: white;
 }
 /* .navbar a.active::before {
   content: '';
