@@ -239,7 +239,6 @@ section {
 /* .hero .the-whole-home-img {
 } */
 
-
 .socials ul {
   margin-top: 1rem;
   display: flex;
@@ -514,7 +513,6 @@ form .send-btn:hover {
 
 /********** Start info utiles (chagement de plan) loGo + B ********/
 
-
 .info-utiles {
   height: 100vh;
   height: 100svh;
@@ -526,7 +524,7 @@ form .send-btn:hover {
   align-items: center;
   justify-content: start;
 }
-.info-utiles .grid-logo{
+.info-utiles .grid-logo {
   background-color: rgb(95, 117, 122);
   display: grid;
   place-items: center;
@@ -543,13 +541,11 @@ form .send-btn:hover {
   gap: var(--grid-gap);
 }
 
-.info #info-socials p{
+.info #info-socials p {
   display: flex;
 }
 
-
 /*les width et height ne s'appliquent pas à ma photo comme je le souhaite :(*/
-
 
 .info-img img {
   width: 100px;
@@ -568,7 +564,7 @@ form .send-btn:hover {
 
 .info-text h2 {
   color: var(--text-color);
-  font-size: var(--h2-font) ;
+  font-size: var(--h2-font);
   line-height: 1;
   margin-bottom: 20px;
 }
@@ -598,8 +594,6 @@ form .send-btn:hover {
 .center-text h2 {
   font-size: var(--h2-font);
 }
-
-
 
 /* Start info-utiles StylinG  *************************************/
 /* .info-utiles {
@@ -665,10 +659,9 @@ form .send-btn:hover {
   background-color: va {
   position: relative;
 }*/
-.info{
+.info {
   position: relative;
 }
-
 
 .to-the-moon-btn {
   position: absolute;
@@ -712,10 +705,10 @@ form .send-btn:hover {
     background-position: 0% 50%;
   }
 }
-    
+
 footer {
   padding: 22px;
-  background-color: var(--bg-color);
+  background-color: var(--card-bg-color);
   display: grid;
   place-content: center;
   gap: 2rem;
@@ -724,10 +717,10 @@ footer {
   font-size: 15px;
   font-weight: 400;
   color: var(--h1-color);
-}
   place-content: center;
   gap: 2rem;
 }
 
-/* .copyright p {
- */
+.copyright {
+  background: var(--card-bg-color);
+}

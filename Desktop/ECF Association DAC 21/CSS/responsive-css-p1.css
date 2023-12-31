@@ -2,35 +2,32 @@
 /********* MEDIA QUERY Responsive part ****************/
 
 @media (min-width: 500px) {
-
-  :root{
-  --h1-font: 7.8rem;
-  --h2-font: 3.2rem;
-  --h3-font: 2rem;
-  --p-font: 1.6rem;
-  --flex-GaP: 60px;
-  --grid-gap: 2.2rem;
+  :root {
+    --h1-font: 7.8rem;
+    --h2-font: 3.2rem;
+    --h3-font: 2rem;
+    --p-font: 1.6rem;
+    --flex-GaP: 60px;
+    --grid-gap: 2.2rem;
   }
 
-  
   /* .hero-copmposition img{
     background:greenyellow;
     height: 300px;
     margin-top: 80px;
   } */
 
-.the-whole-home-img{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
+  .the-whole-home-img {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 
-}
+  .the-whole-home-img .socials {
+    margin-top: 400px;
+  }
 
-.the-whole-home-img .socials{
-  margin-top:400px ;
-}
-
-.hero .home-img-1 {
+  .hero .home-img-1 {
     top: 200px;
     right: 350px;
     box-shadow: 0.1rem 0.1rem 2rem;
@@ -53,7 +50,6 @@
     z-index: 666666;
   }
 }
-
 
 @media (max-width: 1700px) {
   header {
@@ -217,7 +213,11 @@ de gerer des elemets absolutes en responsive => je ne ferais JAMAIS ce choix ^_^
 
 @media (max-width: 950px) {
   :root {
-    --h1-font: 3.5rem;
+    --h1-font: 4rem; /*mes variables soudainement ne marchent plus et j'en ai aucune idée!*/
+  }
+
+  .hero h1 {
+    font-size: 4rem;
   }
   .social {
     margin-bottom: 20px;
@@ -283,8 +283,6 @@ de gerer des elemets absolutes en responsive => je ne ferais JAMAIS ce choix ^_^
     height: 460px;
   }
 
-
-
   .hero .main-content {
     padding: 3.5rem;
     gap: 3rem;
@@ -329,36 +327,49 @@ de gerer des elemets absolutes en responsive => je ne ferais JAMAIS ce choix ^_^
   .main-content p {
     width: 100%;
   }
-}
-
-/*ici aussi ça marche pas mon mediaquery voulu why ?*/
-
-@media (max-width: 630px) {
-  .img-montage :nth-child(2) {
-    position: absolute;
-    top: 420px;
-    right: -60px;
-    height: 460px;
-    width: fit-content;
+  .hero h1 {
+    font-size: 3.2rem;
   }
-}
-
-@media (max-width: 600px) {
-  .img-montage :nth-child(2) {
-    position: absolute;
-    top: 420px;
-    right: 20px;
-    height: 460px;
+  .hero p {
+    font-size: 1.27rem;
   }
+  /* .hero .home-img-3 {
+    position: absolute;
+    top: 300px;
+    right: 590px;
+    rotate: 45deg;
+    z-index: 666666;
+  }
+} */
+
+  /*ici aussi ça marche pas mon mediaquery voulu why ?*/
+
+  @media (max-width: 630px) {
+    .img-montage :nth-child(2) {
+      position: absolute;
+      top: 420px;
+      right: -60px;
+      height: 460px;
+      width: fit-content;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .img-montage :nth-child(2) {
+      position: absolute;
+      top: 420px;
+      right: 20px;
+      height: 460px;
+    }
 
     .img-montage2 :nth-child(2) {
-    position: absolute;
-    top: 180x;
-    right: 0px;
-    height: 460px;
-    width: fit-content;
+      position: absolute;
+      top: 180x;
+      right: 0px;
+      height: 460px;
+      width: fit-content;
+    }
   }
-}
 
   .hero .home-img-2 {
     position: absolute;
@@ -431,7 +442,7 @@ franchement je ne comprends pas WHY ?  (550px)*/
     height: 460px;
   }
 
-    .img-montage2 :nth-child(2) {
+  .img-montage2 :nth-child(2) {
     position: absolute;
     top: 200px;
     left: 100px;
@@ -440,29 +451,32 @@ franchement je ne comprends pas WHY ?  (550px)*/
   }
 }
 
-  .hero .home-img-1 {
-    top: 100px;
-    right: 350px;
-    height: 30px;
-    opacity: 0.6;
-    z-index: -10000;
-  }
-  .hero .home-img-2 {
-    position: absolute;
-    background-color: rgba(1, 193, 193, 0.3);
-    top: 120px;
-    right: -55px;
-    opacity: 0.6;
-  }
+.hero .home-img-1 {
+  top: 100px;
+  right: 350px;
+  height: 30px;
+  opacity: 0.6;
+  z-index: -10000;
+}
+.hero .home-img-2 {
+  position: absolute;
+  background-color: rgba(1, 193, 193, 0.3);
+  top: 120px;
+  right: -55px;
+  opacity: 0.6;
+}
 
-  .hero .home-img-3 {
-    position: absolute;
-    top: 370px;
-    right: 190px;
-    rotate: 45deg;
-    z-index: 666666;
-  }
+.hero .home-img-3 {
+  position: absolute;
+  top: 370px;
+  right: 190px;
+  rotate: 45deg;
+  z-index: 666666;
+}
 
+form #send-btn {
+  padding: 11px 16px;
+}
 
 .info-img img {
   width: 100%;
