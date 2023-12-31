@@ -1,0 +1,480 @@
+/* ResponSive Part (Je vais GALERER je le sais avant même de commencer cette partie) */
+/********* MEDIA QUERY Responsive part ****************/
+
+@media (min-width: 500px) {
+
+  :root{
+  --h1-font: 7.8rem;
+  --h2-font: 3.2rem;
+  --h3-font: 2rem;
+  --p-font: 1.6rem;
+  --flex-GaP: 60px;
+  --grid-gap: 2.2rem;
+  }
+
+  
+  /* .hero-copmposition img{
+    background:greenyellow;
+    height: 300px;
+    margin-top: 80px;
+  } */
+
+.the-whole-home-img{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.the-whole-home-img .socials{
+  margin-top:400px ;
+}
+
+.hero .home-img-1 {
+    top: 200px;
+    right: 350px;
+    box-shadow: 0.1rem 0.1rem 2rem;
+    opacity: 0.6;
+    z-index: -10000;
+  }
+  .hero .home-img-2 {
+    position: absolute;
+    background-color: rgba(1, 193, 193, 0.3);
+    top: 120px;
+    right: 7px;
+    opacity: 0.6;
+  }
+
+  .hero .home-img-3 {
+    position: absolute;
+    top: 370px;
+    right: 190px;
+    rotate: 45deg;
+    z-index: 666666;
+  }
+}
+
+
+@media (max-width: 1700px) {
+  header {
+    padding: 20px 8px;
+  }
+  header.je-mattache {
+    padding: 14px 8%;
+  }
+  section {
+    padding: 90px 16% 80px;
+  }
+  .img-montage :nth-child(1) {
+    height: 700px;
+    /* margin-right: 60rem; */
+    /* top-right: 40px */
+  }
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 190px;
+    right: 280px;
+    height: 460px;
+  }
+
+  .img-montage2 :nth-child(1) {
+    height: 620px;
+  }
+
+  .img-montage2 :nth-child(2) {
+    position: absolute;
+    top: 160px;
+    left: 250px;
+    height: 460px;
+  }
+
+  .footer {
+    padding: 18px 8%;
+  }
+  .logo {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1380px) {
+  header {
+    padding: 20px 5px;
+  }
+  header.je-mattache {
+    padding: 14px 5%;
+  }
+  section {
+    padding: 90px 10% 80px;
+  }
+
+  /* 2 absolutes images (une vraie casse tête chinoise 
+de gerer des elemets absolutes en responsive => je ne ferais JAMAIS ce choix ^_^ */
+
+  .img-montage :nth-child(1) {
+    height: 700px;
+  }
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 210px;
+    right: 180px;
+    height: 460px;
+  }
+
+  .img-montage2 :nth-child(1) {
+    height: 620px;
+  }
+
+  .img-montage2 :nth-child(2) {
+    position: absolute;
+    top: 160px;
+    left: 120px;
+    height: 460px;
+  }
+
+  .footer {
+    padding: 18px 5%;
+  }
+  /* .hero {
+    height: 90vh;
+    background-position: center;
+  } */
+
+  /* BUG !! elle est à la fois un element grid + ici un element flex !! :( */
+
+  #info img {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 450px;
+    width: 450px;
+  }
+  .info-img {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1290px) {
+  .card {
+    padding: 40px 40px 46px;
+  }
+  /* .card-img img {
+    width: 100%;
+    height: 60px;
+    max-width: 60px;
+  } */
+  .card-h3 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 1240px) {
+  header .navlist {
+    gap: 2rem;
+  }
+
+  .hero .main-content {
+    padding: 3rem;
+    gap: 4rem;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .info-img {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .info .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .info .info-text p {
+    display: flex;
+    justify-content: center;
+  }
+  :root {
+    --h1-font: 4.4rem;
+    --h2-font: 2.8rem;
+    --p-font: 15px;
+  }
+}
+
+@media (max-width: 950px) {
+  :root {
+    --h1-font: 3.5rem;
+  }
+  .social {
+    margin-bottom: 20px;
+  }
+  #menu-icon {
+    display: block;
+  }
+
+  /* C'est pas ouf mais c pas mal non plus pour un débutant => rendu à voir (subjectif) */
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 255px;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    transition: all 0.5s ease;
+  }
+  .navlist a {
+    display: block;
+    padding: 17px;
+    font-size: 22px;
+  }
+  .navlist.active {
+    right: 0;
+  }
+
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 190px;
+    right: 130px;
+    height: 460px;
+  }
+}
+
+@media (max-width: 850px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: 230px;
+    height: 460px;
+  }
+  .service1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .info-img {
+    display: grid;
+    place-content: center;
+  }
+}
+
+@media (max-width: 730px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: 110px;
+    height: 460px;
+  }
+
+
+
+  .hero .main-content {
+    padding: 3.5rem;
+    gap: 3rem;
+  }
+
+  .hero .home-img-2 {
+    position: absolute;
+    background-color: rgba(1, 193, 193, 0.4);
+    top: 120px;
+    right: 0px;
+    /* border: 1rem solid var(--third-bg-color);
+    border-radius: 50%;
+    box-shadow: 2rem 0.1rem 2rem var(--logo-color);
+    opacity: 0.7;
+    z-index: 1; */
+  }
+
+  .hero .home-img-3 {
+    position: absolute;
+    top: 370px;
+    right: 240px;
+    rotate: 45deg;
+    z-index: 666666;
+  }
+
+  :root {
+    --h1-font: 3.4rem;
+    --h2-font: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: 100px;
+    height: 460px;
+  }
+}
+
+@media (max-width: 680px) {
+  .main-content p {
+    width: 100%;
+  }
+}
+
+/*ici aussi ça marche pas mon mediaquery voulu why ?*/
+
+@media (max-width: 630px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: -60px;
+    height: 460px;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: 20px;
+    height: 460px;
+  }
+
+    .img-montage2 :nth-child(2) {
+    position: absolute;
+    top: 180x;
+    right: 0px;
+    height: 460px;
+    width: fit-content;
+  }
+}
+
+  .hero .home-img-2 {
+    position: absolute;
+    background-color: rgba(1, 193, 193, 0.3);
+    top: 120px;
+    right: -55px;
+
+    opacity: 0.7;
+  }
+
+  .hero .home-img-3 {
+    position: absolute;
+    top: 370px;
+    right: 190px;
+    rotate: 45deg;
+    z-index: 666666;
+  }
+}
+
+/* par exemple ici mon absolute position ne marche pas et 
+franchement je ne comprends pas WHY ?  (550px)*/
+
+@media (max-width: 550px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: 0px;
+    height: 460px;
+  }
+}
+
+@media (max-width: 500px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: -5px;
+    height: 460px;
+  }
+
+  /*Je n'arrive pas à targeter le premier layout de ma photo etrAnGe non ? !!!*/
+  .hero .home-img-1 {
+    top: 100px;
+    right: 350px;
+    box-shadow: 0.1rem 0.1rem 2rem;
+    opacity: 0.6;
+    z-index: -10000;
+  }
+  .hero .home-img-2 {
+    position: absolute;
+    background-color: rgba(1, 193, 193, 0.3);
+    top: 120px;
+    right: -55px;
+    opacity: 0.6;
+  }
+
+  .hero .home-img-3 {
+    position: absolute;
+    top: 370px;
+    right: 190px;
+    rotate: 45deg;
+    z-index: 666666;
+  }
+}
+
+@media (max-width: 470px) {
+  .img-montage :nth-child(2) {
+    position: absolute;
+    top: 420px;
+    right: 0px;
+    height: 460px;
+  }
+
+    .img-montage2 :nth-child(2) {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    height: 400px;
+    aspect-ratio: 1;
+  }
+}
+
+  .hero .home-img-1 {
+    top: 100px;
+    right: 350px;
+    height: 30px;
+    opacity: 0.6;
+    z-index: -10000;
+  }
+  .hero .home-img-2 {
+    position: absolute;
+    background-color: rgba(1, 193, 193, 0.3);
+    top: 120px;
+    right: -55px;
+    opacity: 0.6;
+  }
+
+  .hero .home-img-3 {
+    position: absolute;
+    top: 370px;
+    right: 190px;
+    rotate: 45deg;
+    z-index: 666666;
+  }
+
+
+.info-img img {
+  width: 100%;
+  height: 300px;
+  max-width: 300px;
+  border-radius: 30%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+:root {
+  --h1-font: 3rem;
+  --h2-font: 2.5rem;
+}
+
+/********* MEDIA QUERY Responsive part ****************/

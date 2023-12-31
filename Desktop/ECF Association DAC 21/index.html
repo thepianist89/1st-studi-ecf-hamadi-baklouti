@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- personal css -->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <meta name="description" content="page officielle de l'association DAC21" />
+    <meta
+      name="keywords"
+      content="médical, infermière, coordonatrice, santé, personnes agées, personnes fragiles, personnes en situation de handicap"
+    />
+    <!--personal css -->
+    <link rel="stylesheet" href="CSS/style-p1.css" />
+    <!-- responsive css-p1 -->
+    <link rel="stylesheet" href="CSS/responsive-css-p1.css" />
     <!-- perso j'adore poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,8 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- boostrap -->
-    <link rel="stylesheet" href="CSS/bootstrap.min.css.map" />
+    <link rel="icon" href="CSS/assets/img/pages/logo-petite-version.png" />
     <title>ECF ASSO DAC 21</title>
     <!-- box icons link -->
     <link
@@ -26,6 +32,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- start header -->
     <header>
@@ -36,20 +43,28 @@
             alt="logo-officiel-de-l'asso"
           />
         </a>
-        <i class="bx bx-menu"></i>
+        <div class="bx bx-menu" id="menu-icon"></div>
       </div>
 
       <ul class="navlist">
-        <li><a href="#home">home</a></li>
-        <li><a href="#Nous-somMes">Nous-somMes</a></li>
+        <li>
+          <a
+            href="https://www.mon-site-bootstrap.link-raté-entre-2-pages"
+            target="_blank"
+            >Nos événements</a
+          >
+        </li>
+        <!--ici c'est censé faire un target externe vers le site bootstrap-->
         <li><a href="#Notre-TeAm">Notre-TeAm</a></li>
         <li><a href="#Service1">Service1</a></li>
         <li><a href="#Service2">Service2</a></li>
-        <li><a href="#Nous-contacter">Nous-contacter</a></li>
-        <li><a href="#Espace-meMbRe">Espace-meMbRe</a></li>
-        <li><a href="#informations-utiles">informations-utiles</a></li>
+        <li><a href="#contact">Nous-contacter</a></li>
+        <!-- <li><a href="#Nos-Missions">Nos Missions</a></li> -->
+        <li><a href="#info">informations-utiles</a></li>
       </ul>
-      <a href="#informations-utiles" class="contact-me-btn">contactez-nous</a>
+      <a href="#info" class="contact-me-btn"
+        >Contact <i class="bx bx-up-arrow-alt"></i>
+      </a>
     </header>
     <!-- end header -->
     <!-- start home section -->
@@ -65,22 +80,24 @@
       </div>
       <div class="the-whole-home-img">
         <div class="home-img-1">
-          <img
-            src="CSS/assets/img/pages/logo-bg-design.png"
-            alt="partie-1-de-image-home"
-          />
-        </div>
-        <div class="home-img-2">
-          <img
-            src="CSS/assets/img/pages/home-logo.png"
-            alt="partie-2-loGo-home"
-          />
-        </div>
-        <div class="home-img-3">
-          <img
-            src="CSS/assets/img/pages/add-on-home-hero.png"
-            alt="partie-3-de-image-home"
-          />
+          <div class="hero-copmposition">
+            <img
+              src="CSS/assets/img/pages/logo-bg-design.png"
+              alt="partie-1-de-image-home"
+            />
+          </div>
+          <div class="home-img-2">
+            <img
+              src="CSS/assets/img/pages/home-logo.png"
+              alt="partie-2-loGo-home"
+            />
+          </div>
+          <div class="home-img-3">
+            <img
+              src="CSS/assets/img/pages/add-on-home-hero.png"
+              alt="partie-3-de-image-home"
+            />
+          </div>
         </div>
         <div class="socials">
           <p>suivez-nous:</p>
@@ -100,17 +117,20 @@
           </ul>
         </div>
       </div>
-      <!-- End home section -->
-      <!-- Start Rencontrez NOTRE EQuipe ^_^ -->
     </section>
+    <!-- End home section -->
+    <!-- Start Rencontrez NOTRE EQuipe ^_^ -->
     <section class="Notre-TeAm" id="Notre-TeAm">
       <div class="sect-titre">
         <h2>Rencontrez<span class="la-team">la TeAm</span></h2>
       </div>
       <div class="sect-content">
         <div class="card">
-          <img src="CSS/assets/img/Equipes/1.png" alt="membre-1-de-lequipe" />
-          <h3>Anaîs : Directrice et inférmière coordinatrice</h3>
+          <img
+            src="CSS/assets/img/Equipes/petite-1.png"
+            alt="membre-1-de-lequipe"
+          />
+          <h3>Anaîs : Directrice et infirmière coordinatrice</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
             expedita a cumque eius in dolor corrupti ratione voluptatum porro.
@@ -120,8 +140,14 @@
           </a>
         </div>
         <div class="card">
-          <img src="CSS/assets/img/Equipes/2.png" alt="membre-2-de-lequipe" />
-          <h3>Constance : inférmière coordinatrice</h3>
+          <img
+            src="CSS/assets/img/Equipes/petite-2.png"
+            alt="membre-2-de-lequipe"
+          />
+          <h3>
+            Constance : <br />
+            infirmière coordinatrice
+          </h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
             expedita a cumque eius in dolor corrupti ratione voluptatum porro.
@@ -131,14 +157,20 @@
           </a>
         </div>
         <div class="card">
-          <img src="CSS/assets/img/Equipes/3.png" alt="membre-3-de-lequipe" />
-          <h3>Samira o5t Sémy la7wal : inférmière coordinatrice</h3>
+          <img
+            src="CSS/assets/img/Equipes/petite-3.png"
+            alt="membre-3-de-lequipe"
+          />
+          <h3>
+            Lucie : <br />
+            infirmière coordinatrice
+          </h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
             expedita a cumque eius in dolor corrupti ratione voluptatum porro.
           </p>
           <a href="#"
-            >Plus d'info sur Samira <i class="ri-arrow-right-line"></i>
+            >Plus d'info sur Lucie <i class="ri-arrow-right-line"></i>
           </a>
         </div>
       </div>
@@ -156,7 +188,7 @@
       </div>
       <div class="img-montage">
         <img src="CSS/assets/img/pages/artistic-shaddow-1.png" alt="" />
-        <img src="CSS/assets/img/pages/page-3.png" alt="" />
+        <img src="CSS/assets/img/pages/page-3.png" alt="service1-img" />
       </div>
     </section>
     <!-- End service1 section -->
@@ -178,19 +210,40 @@
       </div>
     </section>
     <!-- End service2 section -->
+    <!-- start contact-form section -->
+    <section class="contact" id="contact">
+      <div class="center-text">
+        <h2>Contactez<span>-nous</span></h2>
+      </div>
+      <div class="contact-form">
+        <form action="get">
+          <input type="text" placeholder="Votre Nom" required />
+          <input type="email" placeholder="Votre E-Mail" required />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Votre mail ==> c'est par là ^__^"
+            required
+          ></textarea>
+          <input type="submit" name="" value="Envoyer" class="send-btn" />
+        </form>
+      </div>
+    </section>
+    <!-- End contact sec -->
+
+    <!-- End contact-form section -->
     <!-- start info-utiles -->
     <section class="info-utiles" id="informations-utiles">
-      <!-- I'm gonna use soMe Grid (compleX Grid: un défit personnel) -->
       <div class="grid-logo">
-        <img src="CSS/assets/img/pages/logo-petite-version.png" alt="" />
-      </div>
-      <div class="big-logo">
         <img
-          src="CSS/assets/img/pages/DAC-21-BiG-loGo.png"
-          alt="biG dac 21 logo"
+          src="CSS/assets/img/pages/logo-petite-version.png"
+          alt="logo-principal"
         />
       </div>
-      <div class="carossel-photo-dac21">
+
+      <!-- <div class="carossel-photo-dac21">
         prochaine feature that will be pushed ASAP
       </div>
       <div class="info-utiles-content">
@@ -199,7 +252,16 @@
           01 23 45 67 89 90 rue de la Paix, 03200 Vichy
           bonjour@sitevraimentsuper.fr
         </p>
-        <div class="socials">
+      </div> -->
+    </section>
+
+    <!-- End info-utiles -->
+
+    <!-- Start about sec-->
+    <section class="info" id="info">
+      <div class="info-text">
+        <h2>ContAct</h2>
+        <div class="socials" id="info-socials">
           <p>suivez-nous:</p>
           <ul>
             <li>
@@ -217,12 +279,45 @@
           </ul>
         </div>
       </div>
+
+      <div class="info-area">
+        <p class="info">Association: <span>DAC 21</span></p>
+        <p class="info">
+          Adresse: <span>32 allée de la Cude 21370 VELARS SUR OUCHE</span>
+        </p>
+        <p class="info">
+          E-mail:
+          <span
+            >hamadi_bro@gmail.com / coordination.centreest@dac21.fr /
+            dac21.centre@mail.esante-bourgogne.fr
+          </span>
+        </p>
+        <p class="info">Numéro Tel: <span>03 80 300 414</span></p>
+      </div>
+
+      <div class="info-img">
+        <img src="CSS/assets/img/pages/DAC-21-BiG-loGo.png" alt="the dev img" />
+      </div>
       <a href="#home" class="to-the-moon-btn"> <i class="bx bxs-moon"></i></a>
     </section>
-    <!-- End info-utiles -->
+
+    <!-- End info-area sec -->
+
+    <!-- Start footer sec -->
+    <footer class="footer">
+      <div class="copyright">
+        <p>
+          (Studi 1st bloc ECF validated) Dec 2023 BAKLOUTI HAMADI
+          var(--ThebAk-DeV),All rights Reserved brO!
+        </p>
+
+        <!-- End footer sec -->
+      </div>
+    </footer>
     <!-- PersOnAl SIMPLE js (des fonctions simples) -->
     <script src="JS/script.js"></script>
     <!-- js bootstrap -->
     <script src="JS/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+>
